@@ -1,0 +1,578 @@
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-app {
+  width: 100vw;
+  height: 100vh; }
+
+.ktg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.ktg-screen-container, .ktg-intro, .ktg-home, .ktg-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: white; }
+  @media (min-width: 640px) {
+    .ktg-screen-container, .ktg-intro, .ktg-home, .ktg-results {
+      padding: 3vh 3vw; } }
+  .ktg-screen-container--error, .ktg-screen-container--info, .ktg-screen-container--intro, .ktg-intro {
+    background-color: #FFDA04; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-btn--circle, .ktg-geolocalizer {
+  background: #FFDA04;
+  color: black;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer; }
+  .ktg-btn--circle--big, .ktg-geolocalizer {
+    line-height: 70px;
+    width: 100px;
+    height: 100px; }
+  .ktg-btn--circle:hover, .ktg-geolocalizer:hover {
+    background: #FFCD00; }
+
+.ktg-loading {
+  position: relative;
+  opacity: 0;
+  height: 0px;
+  animation: opacity 3s slidein; }
+  .ktg-loading--is-loading {
+    opacity: 1;
+    height: auto;
+    animation: opacity 3s slidein; }
+  .ktg-loading__spiner {
+    animation: rotator 1.4s linear infinite; }
+  .ktg-loading__path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: loading-animate-dash 1.4s ease-in-out infinite, loading-animate-colors 5.6s ease-in-out infinite; }
+  .ktg-loading:before {
+    content: "Buscando paradas...";
+    position: absolute; }
+
+@keyframes loading-animate-rotator {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(270deg); } }
+
+@keyframes loading-animate-colors {
+  0% {
+    stroke: #FFCD00; }
+  25% {
+    stroke: #FFDA04; }
+  50% {
+    stroke: #FFCD00; }
+  75% {
+    stroke: #FFDA04; }
+  100% {
+    stroke: #FFCD00; } }
+
+@keyframes loading-animate-dash {
+  0% {
+    stroke-dashoffset: 187; }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg); }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg); } }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-geolocalizer:before {
+  content: " ";
+  display: block;
+  padding-bottom: 55px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAA3CAYAAACPdVOuAAAAAXNSR0IArs4c6QAAA4BJREFUaAXNmVuITVEYx88wSNJEkhmaSRoSyeVh3Al58cQDL/JEmielyJOYeFDkYVIoTy558KB4QNQ8iHKLyAMylIzLaHK/D7//mbOm02nvc9a39t5z5qv/rG2t7/t//732Wd9ae6vJhVkNYS1gNWgEDQWMpn0DXhfwiPZCoY8mW5OgY6AL/PNEL343wU5QB1K3qTCeA76C4vw+wLEdjACJrRaGg+A3iEsY0v8CvmUg2MYSeRWEJPeJ+QX31hB1zQQ9zVBYsfh28miBeZlm7BkoJsj6us1HmX5j1wZYmLvx9ZUEHq6SMAn8BmbGCZzOwB/g7qQa7eU4ceerLMxNxqpSgYsGiTAJvOvEaQHINvc1QX9VoDvAffAFaJ/V3U8BITaXIOGegoeC98BNq6XtIG4yiLJNdPYAC5/z3esIlwQS7CGuUvGciM/DAP4HxORtH3+dYt9WtbCSsD72XG42F9qqfLmd3wQRnDIG/sC/SYEGC5mAliEkqDckkatm7aUx5oTRX+4NEqfVZbH8KrIE4NsJPhpj6iXOejr9ZEzi3K1xdRKn5W4x60yLW3nGW5Lg26OgbmPQCqO/3BcC69G8W+KeK9pgs/Bda/CX626jv9zzulq5cLXFt31LzDgxeJiO4r68zu87McPEPS8gWCS3wDRQzrYw+BW4pL7tDUeaZG/VAXEXyFfzAqF2jvngEvAVU+rXVuDKNyqSpQ6Wf/cS3wWegM8JuZRXW16/reHKIiZL3/4FqtUquwL0Ix8MdjJKxH46s5wRH269w0yKEtdE598qC9R7TKydZsTnDrPyWRCrjIFmoHeCrJKX471YTpgbS1pWygmIG1MpmuMElGubGPwJ4oiy6Ne3P287gmcWIqI4tQhneCvDUWc2bU1RZGn36R0m0rSvRpm2IO2RIWe3KL64Pr2ErwPWU3JuOEGPQdozVcy3Df5gW0ykVlIxYVrXt+GNe3Lego9nIE7blFfpqKRyDA76j4+0Zkw8hyoltYxvSFFcJ1yjLMl9fM+mIFA1balPMquPHu8rkOTxHrAmtfivxDn0WKUvlipPmVrIoVRFXSeezK2WDNeB5fFuzFxVUQJ9sXznKfBoUdyAXer3p2JabgbvMG79RpLaDewoI04z25hapkCiqPqno/7yQL5Uw0bCpsdX/HhbU82QkEyHU1eg2xNyZRKu7xtnQOJjkFP3H4wkIaV/s8tUAAAAAElFTkSuQmCC);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-slider {
+  color: white;
+  text-align: center; }
+  .ktg-slider__input, .ktg-slider input[type=range] {
+    margin: 0 20px;
+    -webkit-appearance: none;
+    width: 80vw;
+    cursor: pointer; }
+    @media (min-width: 850px) {
+      .ktg-slider__input, .ktg-slider input[type=range] {
+        width: 30vw; } }
+    .ktg-slider__input::-webkit-slider-runnable-track, .ktg-slider input[type=range]::-webkit-slider-runnable-track {
+      height: 1px;
+      border: none;
+      background: black;
+      opacity: 1; }
+    .ktg-slider__input::-webkit-slider-thumb, .ktg-slider input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 25px;
+      width: 25px;
+      margin-top: -12px;
+      border: none;
+      border-radius: 50%;
+      background: #FFDA04; }
+    .ktg-slider__input::-moz-range-track, .ktg-slider input[type=range]::-moz-range-track {
+      height: 1px;
+      background: white;
+      border: none; }
+    .ktg-slider__input::-moz-range-thumb, .ktg-slider input[type=range]::-moz-range-thumb {
+      height: 25px;
+      width: 25px;
+      background: #FFDA04;
+      border: none;
+      border-radius: 50%; }
+    .ktg-slider__input:-moz-focusring, .ktg-slider input[type=range]:-moz-focusring {
+      outline: 1px solid white;
+      outline-offset: -1px; }
+    .ktg-slider__input::-ms-track, .ktg-slider input[type=range]::-ms-track {
+      height: 1px;
+      background: transparent;
+      color: transparent;
+      border-color: transparent;
+      border-width: 6px 0; }
+    .ktg-slider__input::-ms-fill-lower, .ktg-slider input[type=range]::-ms-fill-lower {
+      background: #777;
+      border-radius: 10px; }
+    .ktg-slider__input::-ms-fill-upper, .ktg-slider input[type=range]::-ms-fill-upper {
+      background: white;
+      border-radius: 10px; }
+    .ktg-slider__input ::-ms-thumb, .ktg-slider input[type=range] ::-ms-thumb {
+      height: 25px;
+      width: 25px;
+      border: none;
+      border-radius: 50%;
+      background: #FFDA04; }
+    .ktg-slider__input::-ms-fill-lower, .ktg-slider input[type=range]::-ms-fill-lower {
+      background: #888; }
+    .ktg-slider__input:focus, .ktg-slider input[type=range]:focus {
+      outline: none; }
+      .ktg-slider__input:focus::-webkit-slider-runnable-track, .ktg-slider input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #ccc; }
+      .ktg-slider__input:focus::-ms-fill-upper, .ktg-slider input[type=range]:focus::-ms-fill-upper {
+        background: #ccc; }
+    .ktg-slider__input--is-active::-webkit-slider-runnable-track, .ktg-slider input[type=range]\--is-active::-webkit-slider-runnable-track {
+      opacity: 0.3;
+      transition: all 3s ease-out; }
+  .ktg-slider__output {
+    display: block;
+    margin-top: 2vh;
+    opacity: 0.3;
+    color: black;
+    font-size: 2.57143rem;
+    font-weight: 200;
+    text-align: center;
+    transition: all 0.5s ease-out; }
+    .ktg-slider__output.is-active {
+      opacity: 1; }
+  .ktg-slider__output-unit {
+    font-size: 1.07143rem; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-intro .ktg-logo-katanga {
+  width: 35vh; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-home__header {
+  width: 30vw;
+  margin: 4vh 0 15vh 0;
+  text-align: left; }
+  @media (min-width: 850px) {
+    .ktg-home__header {
+      margin: 2vh 0 6vh 0; } }
+  .ktg-home__header--is-loading {
+    display: none; }
+
+.ktg-home__title {
+  font-size: 0;
+  line-height: 0; }
+
+.ktg-home .ktg-home__meters-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ktg-home .ktg-home__meters-around--is-loading {
+    display: none; }
+
+.ktg-home .ktg-slider {
+  margin-bottom: 8vh; }
+
+.ktg-home .ktg-geolocalizer--is-pulse {
+  animation: 1s ease-in-out 3.5s 2 forwards geolocalizer_pulse; }
+
+@keyframes geolocalizer_pulse {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(0.9); }
+  75% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+.ktg-home .ktg-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-results__header {
+  margin: 0; }
+
+.ktg-results__title {
+  line-height: 0;
+  font-size: 0px; }
+
+.ktg-bus-stop {
+  margin-bottom: 0;
+  border: 1px solid #bfbfbf;
+  border-top: 0; }
+  @media (min-width: 640px) {
+    .ktg-bus-stop {
+      border-top: 1px solid #bfbfbf;
+      margin-bottom: 50px; } }
+  .ktg-bus-stop:first-child {
+    border-top: 1px solid #bfbfbf; }
+  .ktg-bus-stop__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .ktg-bus-stop__header {
+    width: 100%;
+    border-spacing: 0px;
+    border-bottom: 1px solid #bfbfbf; }
+    .ktg-bus-stop__header th {
+      text-align: left; }
+    .ktg-bus-stop__header tr th {
+      padding: 20px; }
+  .ktg-bus-stop__info {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    word-wrap: break-word; }
+    @media (min-width: 640px) {
+      .ktg-bus-stop__info {
+        display: inline-block;
+        width: 83%; } }
+  .ktg-bus-stop__icon {
+    display: none;
+    width: 100%;
+    vertical-align: middle; }
+    @media (min-width: 850px) {
+      .ktg-bus-stop__icon {
+        display: inline-block;
+        width: 17%; } }
+  .ktg-bus-stop__icon svg {
+    width: 7rem;
+    height: 7rem; }
+  .ktg-bus-stop__description {
+    display: block;
+    margin: 0;
+    text-align: left;
+    font-weight: 100;
+    line-height: 1.85714rem;
+    font-size: 26px; }
+    @media (min-width: 850px) {
+      .ktg-bus-stop__description {
+        font-size: 2.85714rem;
+        line-height: 45px; } }
+  .ktg-bus-stop__distance {
+    display: block;
+    margin: 10px 0 0 0;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.07143rem;
+    color: #999999; }
+    @media (min-width: 640px) {
+      .ktg-bus-stop__distance {
+        font-size: 0.92857rem; } }
+    .ktg-bus-stop__distance--strong {
+      font-weight: 500;
+      color: black; }
+
+/**
+ *    Copyright 2016-today Software Craftmanship Toledo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.ktg-bus-stops {
+  display: flex;
+  flex-direction: column; }
+
+.ktg-bus-route {
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center; }
+  .ktg-bus-route__name {
+    width: 10%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #4c4c4c;
+    font-size: 1.42857rem; }
+  .ktg-bus-route__time {
+    width: 90%;
+    padding: 20px; }
+    .ktg-bus-route__time.comes-tomorrow {
+      color: #d41717;
+      font-weight: 400; }
+      .ktg-bus-route__time.comes-tomorrow svg {
+        vertical-align: middle;
+        margin-right: 5px; }
+    .ktg-bus-route__time.comes-today-but-wait-sit {
+      color: #666666;
+      font-weight: 300;
+      font-size: 1.71429rem; }
+    .ktg-bus-route__time.comes-today {
+      color: #595959;
+      font-weight: 400;
+      font-size: 1.85714rem; }
+    .ktg-bus-route__time.comes-now {
+      color: #4c4c4c;
+      font-weight: 500;
+      font-size: 2rem; }
+    .ktg-bus-route__time.comes-right-now {
+      color: #02a740;
+      font-weight: 600;
+      font-size: 2.14286rem;
+      animation: bus-route-intermitent-green 1s infinite; }
+  .ktg-bus-route__quantity-of-time {
+    vertical-align: middle; }
+  .ktg-bus-route__unit-time {
+    font-size: 0.85714rem; }
+  .ktg-bus-route:last-child {
+    border-bottom: none; }
+
+@keyframes bus-route-intermitent-green {
+  0% {
+    color: #02a740; }
+  50% {
+    color: #028e36; }
+  100% {
+    color: #02a740; } }
