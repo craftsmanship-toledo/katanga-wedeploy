@@ -2,5 +2,5 @@
 	"id": "backend",
 	"description": "this App can show you Toledo bus stops timing to all routes",
 	"image": "swcraftersclm/katanga-backend:1.0-SNAPSHOT",
-	"port": "9000"
+	"port": 9000
 }
