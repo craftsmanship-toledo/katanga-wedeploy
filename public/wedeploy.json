@@ -1,6 +1,6 @@
 {
 	"id": "public",
 	"description": "this App can show you Toledo bus stops timing to all routes",
-	"image": "swcraftersclm/katanga-frontend:1.0.0-rc.1",
+	"image": "swcraftersclm/katanga-frontend:1.0.0-rc.2",
 	"port": 80
 }
